@@ -636,7 +636,6 @@
 
             useEffect(() => {
                 const phases = [
-                    { text: 'npm install -g zenuxs-code', type: 'input', delay: 500 },
                     { text: '✓ Installing...', type: 'success', delay: 1500 },
                     { text: 'Downloading Providers... █', type: 'loading', delay: 2500 },
                     { text: 'Loading Agents... █', type: 'loading', delay: 3500 },
@@ -660,7 +659,7 @@
             }, []);
 
             return (
-                <section id="hero" ref={heroRef} className="scene relative overflow-hidden" role="main" aria-label="Hero section">
+                <section id="hero" ref={heroRef} className="scene relative overflow-hidden pt-16 md:pt-20" role="main" aria-label="Hero section">
                     <div className="absolute inset-0 bg-volume"></div>
                     <div className="absolute inset-0 bg-glow bg-grain"></div>
                     <div className="absolute inset-0 bg-cinematic opacity-30"></div>
@@ -681,7 +680,7 @@
                             <p className="text-lg md:text-xl text-secondary max-w-md leading-relaxed font-light">The AI Operating System for Modern Developers. Write, deploy, and scale without limits.</p>
                             <div className="flex gap-4 mt-2">
                                 <button ref={btnRef} className="btn-primary magnetic-btn">Initialize System</button>
-                                <button className="btn-secondary">View Demo</button>
+                                <a href="https://theme-glm52.zenuxshost.fun/" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center">View Demo</a>
                             </div>
                         </div>
                         <div ref={terminalRef} className="relative h-[500px] md:h-[600px] rounded-3xl border border-border/50 overflow-hidden shadow-2xl bg-[#09090b]">
@@ -1672,9 +1671,9 @@
                 return () => ctx.revert();
             }, []);
             const channels = [
-                { icon: '📧', label: 'Email', value: 'hello@zenuxs.ai', href: 'mailto:hello@zenuxs.ai' },
-                { icon: '🐦', label: 'Twitter / X', value: '@zenuxs_ai', href: '#' },
-                { icon: '💬', label: 'Discord', value: 'discord.gg/zenuxs', href: '#' },
+                { icon: '📧', label: 'Email', value: 'mail@zenuxs.in', href: 'mailto:mail@zenuxs.in' },
+                { icon: '🐦', label: 'Twitter / X', value: 'zenuxsDev', href: 'https://x.com/zenuxsDev' },
+                { icon: '💬', label: 'Discord', value: 'discord.zenuxs.in', href: 'https://discord.zenuxs.in' },
                 { icon: '📡', label: 'Status', value: 'status.zenuxs.ai', href: '#' },
             ];
             return (
